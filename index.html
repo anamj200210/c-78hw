@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title>Family book</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <center>
+        <h1>My Family Book</h1>
+        <img id="family_member_image" height="400px" src="me.JPG">
+
+        <h2 id="family_member_name">Anaira Mittal Jindal</h2>
+        <div> <button type="button" onclick="update();">Next</button> </div>
+
+    </center>
+
+
+
+    <script>
+        var images = [ "Dad.JPG",  "Mom.jpg","me.JPG" ];
+        var names = ["Ashish Jindal", "Rupali Mittal Jindal", "Anaira Mittal Jindal"];
+        var i = 0;
+function update()
+{
+i++;
+var numbers_of_family_member_in_array = 2
+if(i > numbers_of_family_member_in_array )
+{
+i = 0;
+}
+var updated_Image = images[i];
+var updatedName = names[i];
+document.getElementById("family_member_image").src = updated_Image;
+document.getElementById("family_member_name").innerHTML = updatedName;
+}
+    
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+body{
+    text-align: center;
+    background-color: lightcoral; 
+   }
+   button{
+   background-color:crimson;
+   font-size:30px;
+   padding: 5px  
+   }
+   
+   img{
+     height: 400px;
+   }
